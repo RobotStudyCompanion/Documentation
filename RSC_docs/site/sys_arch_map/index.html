@@ -1,163 +1,44 @@
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>markmap - RSC Docs</title>
-    <link rel="stylesheet" href="../css/theme.css" />
-    <link rel="stylesheet" href="../css/theme_extra.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
-    
-      <script>
-        // Current page data
-        var mkdocs_page_name = "markmap";
-        var mkdocs_page_input_path = "sys_arch_map.md";
-        var mkdocs_page_url = null;
-      </script>
-    
-    <!--[if lt IE 9]>
-      <script src="../js/html5shiv.min.js"></script>
-    <![endif]-->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
-      <script>hljs.highlightAll();</script> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/style.css">
 </head>
-
-<body class="wy-body-for-nav" role="document">
-
-  <div class="wy-grid-for-nav">
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-    <div class="wy-side-scroll">
-      <div class="wy-side-nav-search">
-          <a href=".." class="icon icon-home"> RSC Docs
-        </a><div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
-  </form>
-</div>
-      </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <ul>
-                <li class="toctree-l1"><a class="reference internal" href="..">Welcome to MkDocs</a>
-                </li>
-              </ul>
-              <ul class="current">
-                <li class="toctree-l1 current"><a class="reference internal current" href="#">markmap</a>
-    <ul class="current">
-    </ul>
-                </li>
-              </ul>
-      </div>
-    </div>
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
-          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="..">RSC Docs</a>
-        
-      </nav>
-      <div class="wy-nav-content">
-        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
-      <li class="breadcrumb-item active">markmap</li>
-    <li class="wy-breadcrumbs-aside">
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
-            <div class="section" itemprop="articleBody">
-              
-                <h2 id="links">Links</h2>
-<ul>
-<li><a href="https://markmap.js.org/">Website</a></li>
-<li><a href="https://github.com/gera2ld/markmap">GitHub</a></li>
-</ul>
-<h2 id="related-projects">Related Projects</h2>
-<ul>
-<li><a href="https://github.com/gera2ld/coc-markmap">coc-markmap</a> for Neovim</li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=gera2ld.markmap-vscode">markmap-vscode</a> for VSCode</li>
-<li><a href="https://github.com/emacs-eaf/eaf-markmap">eaf-markmap</a> for Emacs</li>
-</ul>
-<h2 id="features">Features</h2>
-<p>Note that if blocks and lists appear at the same level, the lists will be ignored.</p>
-<h3 id="lists">Lists</h3>
-<ul>
-<li><strong>strong</strong> ~~del~~ <em>italic</em> ==highlight==</li>
-<li><code>inline code</code></li>
-<li>[x] checkbox</li>
-<li>Katex: $x = {-b \pm \sqrt{b^2-4ac} \over 2a}$ <!-- markmap: fold --></li>
-<li><a href="#?d=gist:af76a4c245b302206b16aec503dbe07b:katex.md">More Katex Examples</a></li>
-<li>Now we can wrap very very very very long text based on <code>maxWidth</code> option</li>
-</ul>
-<h3 id="blocks">Blocks</h3>
-<pre><code class="language-js">console.log('hello, JavaScript')
-</code></pre>
-<table>
-<thead>
-<tr>
-<th>Products</th>
-<th>Price</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Apple</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Banana</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p><img alt="" src="/favicon.png" /></p>
-              
-            </div>
-          </div><footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
-        <a href=".." class="btn btn-neutral float-left" title="Welcome to MkDocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-    </div>
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-  </div>
-
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
-</footer>
-          
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" aria-label="Versions">
-  <span class="rst-current-version" data-toggle="rst-current-version">
-    
-    
-      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
-    
-    
-  </span>
-</div>
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script>var base_url = "..";</script>
-    <script src="../js/theme_extra.js"></script>
-    <script src="../js/theme.js"></script>
-      <script src="../search/main.js"></script>
-    <script>
-        jQuery(function () {
-            SphinxRtdTheme.Navigation.enable(true);
-        });
-    </script>
-
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.0/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.0/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Robot[ic]<br>Study<br>Companion","children":[{"content":"Interaction","children":[{"content":"Audio","children":[{"content":"Input: 2 Mic Array","children":[{"content":"<table data-lines=\"7,11\">\n<thead data-lines=\"7,8\">\n<tr data-lines=\"7,8\">\n<th>Library</th>\n<th>Version</th>\n</tr>\n</thead>\n<tbody data-lines=\"9,11\">\n<tr data-lines=\"9,10\">\n<td>STT</td>\n<td>v1</td>\n</tr>\n<tr data-lines=\"10,11\">\n<td>SpeechRecognition</td>\n<td>v0</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"lines":"7,11"}}],"payload":{"lines":"6,7"}},{"content":"Output: Speaker","children":[{"content":"<table data-lines=\"15,19\">\n<thead data-lines=\"15,16\">\n<tr data-lines=\"15,16\">\n<th>Library</th>\n<th>Version</th>\n</tr>\n</thead>\n<tbody data-lines=\"17,19\">\n<tr data-lines=\"17,18\">\n<td>TTS</td>\n<td>v1</td>\n</tr>\n<tr data-lines=\"18,19\">\n<td>Whisper</td>\n<td>v0</td>\n</tr>\n</tbody>\n</table>","children":[],"payload":{"lines":"15,19"}}],"payload":{"lines":"13,14"}}],"payload":{"lines":"4,5"}},{"content":"Visual","children":[{"content":"RGB LED array","children":[],"payload":{"lines":"23,24"}},{"content":"touch enabled display","children":[],"payload":{"lines":"24,26"}}],"payload":{"lines":"21,22"}},{"content":"Tactile","children":[{"content":"button","children":[],"payload":{"lines":"28,29"}},{"content":"touch enabled display","children":[],"payload":{"lines":"29,31"}}],"payload":{"lines":"26,27"}},{"content":"Gestures","children":[{"content":"active flippers","children":[],"payload":{"lines":"33,35"}}],"payload":{"lines":"31,32"}},{"content":"Environment","children":[{"content":"mmWave","children":[],"payload":{"lines":"37,40"}}],"payload":{"lines":"35,36"}}],"payload":{"lines":"1,2"}},{"content":"RSC Dev","children":[{"content":"MechDesign","children":[{"content":"modular design","children":[],"payload":{"lines":"46,47"}},{"content":"guide grooves","children":[],"payload":{"lines":"47,48"}},{"content":"snap-fit construction","children":[],"payload":{"lines":"48,49"}},{"content":"3D printed enclosure","children":[],"payload":{"lines":"49,51"}}],"payload":{"lines":"44,45"}},{"content":"ElectroCircuits","children":[{"content":"le PCB","children":[],"payload":{"lines":"53,54"}},{"content":"","children":[],"payload":{"lines":"54,56"}}],"payload":{"lines":"51,52"}},{"content":"CodeStation","children":[{"content":"Interaction Engine","children":[],"payload":{"lines":"58,59"}},{"content":"","children":[],"payload":{"lines":"59,61"}}],"payload":{"lines":"56,57"}}],"payload":{"lines":"40,41"}},{"content":"Docs","children":[{"content":"Assembly","children":[],"payload":{"lines":"63,64"}},{"content":"Configuration","children":[],"payload":{"lines":"64,65"}},{"content":"Troubleshooting","children":[],"payload":{"lines":"65,66"}},{"content":"FAQ","children":[],"payload":{"lines":"66,68"}}],"payload":{"lines":"61,62"}},{"content":"Events","children":[{"content":"publications","children":[{"content":"conference","children":[],"payload":{"lines":"71,72"}},{"content":"article","children":[],"payload":{"lines":"72,73"}},{"content":"essay","children":[],"payload":{"lines":"73,74"}},{"content":"review","children":[],"payload":{"lines":"74,75"}},{"content":"...","children":[],"payload":{"lines":"75,76"}}],"payload":{"lines":"70,76"}},{"content":"replication packages","children":[],"payload":{"lines":"76,77"}},{"content":"","children":[],"payload":{"lines":"77,79"}}],"payload":{"lines":"68,69"}}]},{"colorFreezeLevel":4})</script>
 </body>
 </html>
