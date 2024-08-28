@@ -1,6 +1,6 @@
 # Welcome to MkDocs
 
-[markmap test](template.html)
+[RSC System Architecture MarkMap](rsc_sys_arch_map.html)
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
