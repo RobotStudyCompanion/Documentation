@@ -88,14 +88,15 @@ markmap:
 
 ## **Dev**
 
-### [*Docs*](https://github.com/RobotStudyCompanion/Documentation)
+### <a href="https://github.com/RobotStudyCompanion/Documentation" target="_blank">*Docs*</a>
 
 - [ ] Assembly
 - [ ] Configuration
 - [ ] Troubleshooting
 - [ ] FAQ
 
-### [*CodeStation*](https://github.com/RobotStudyCompanion/CodeStation)
+### <a href="https://github.com/RobotStudyCompanion/CodeStation" target="_blank">*CodeStation*</a>
+
 
 #### *Interaction Engine*
   -  [ ] LLM inferencing
@@ -128,14 +129,14 @@ markmap:
   - [ ] troubleshooting
   - [ ] support 
 
-### [*MechDesign*](https://github.com/RobotStudyCompanion/MechDesign)
+### <a href="https://github.com/RobotStudyCompanion/MechDesign" target="_blank">*MechDesign*</a>
 
 - modular design
 - guide grooves
 - snap-fit construction
 - 3D printed enclosure
 
-### [*ElectroCircuits*](https://github.com/RobotStudyCompanion/ElectroCircuits)
+### <a href="https://github.com/RobotStudyCompanion/ElectroCircuits" target="_blank">*ElectroCircuits*</a>
 
 - [x] expansion board schematic
 - [ ] expansion board PCB
