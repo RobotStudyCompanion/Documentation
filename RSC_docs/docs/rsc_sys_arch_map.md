@@ -2,7 +2,7 @@
 title: <h1>Robot[ic]<br>Study<br>Companion</h1>
 markmap:
   colorFreezeLevel: 5
-  initialExpandLevel: -1
+  initialExpandLevel: 3
 ---
 
 ## **Interact**
@@ -27,7 +27,7 @@ markmap:
     - [ ] (Remote) `Anthropic API`
     - [ ] (Remote) `Google Gemini API`
 
-  - [x] Text-To-Speech
+  - [ ] Text-To-Speech
     - [x] <a href="https://pypi.org/project/pyttsx3/" target="_blank">`pyttsx3 2.91`</a>
     - [ ] <a href="https://platform.openai.com/docs/guides/text-to-speech" target="_blank">`OpenAI TTS`</a>  
 
