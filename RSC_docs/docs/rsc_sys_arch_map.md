@@ -1,90 +1,129 @@
 ---
 title: <h1>Robot[ic]<br>Study<br>Companion</h1>
 markmap:
-  colorFreezeLevel: 6
+  colorFreezeLevel: 5
+  initialExpandLevel: -1
 ---
 
 ## Interaction
 
-### Audio: Speech
+### Audio
 
-- PyAudio 0.2.14
-  - (IN) Respeaker 2 Mics HAT
-  - (IN) AIY Voice Bonnet v2
-  - (IN) USB Mic
-  - (OUT) Built-In Speaker
-  - (OUT) BT Speaker
+- [ ] [`PyAudio 0.2.14`](https://pypi.org/project/PyAudio/)
+  - [x] (IN) Respeaker 2 Mics HAT
+  - [ ] (IN) [AIY Voice Bonnet v2](https://aiyprojects.withgoogle.com/voice)
+  - [ ] (IN) USB Mic
+  - [x] (OUT) Built-In Speaker
+  - [ ] (OUT) BT Speaker
 
-- Speech
-  - Speech-To-Text
-    - `SpeechRecognition 3.10.4`
-    - `OpenAI/Whisper v20231117`
+- [ ] Speech
+  - [ ] Speech-To-Text
+    - [x] [`SpeechRecognition 3.10.4`](https://pypi.org/project/SpeechRecognition/)
+    - [ ] [`OpenAI/Whisper v20231117`](https://github.com/openai/whisper/releases/tag/v20231117)
 
-  - LLM Inference
-    - (Local) Ollama
-    - (Remote) OpenAI API
-    - (Remote) Anthropic API
-    - (Remote) Google Gemini API
+  - [ ] LLM Inference
+    - [ ] (Local) [Ollama](https://github.com/ollama/ollama)
+    - [x] (Remote) [OpenAI API](https://platform.openai.com/docs/overview)
+    - [ ] (Remote) Anthropic API
+    - [ ] (Remote) Google Gemini API
 
   - Text-To-Speech
-    - `pyttsx3 2.91`  
+    - [`pyttsx3 2.91`](https://pypi.org/project/pyttsx3/)  
 
-- Audio Tone: RSC Status
-  - loading 
-  - sentiment
-  - error
-  - waiting
+- [ ] RSC Status
+  - [ ] loading 
+  - [ ] sentiment
+  - [ ] error
+  - [ ] waiting
 
 ### Visual
 
-- Neopixel RGB LED Array: RSC Status
-  - loading 
-  - sentiment
-  - error
-  - waiting
+- [x] [16x NeoPixel Ring](https://www.adafruit.com/product/1463): RSC Status
+  - [ ] loading 
+  - [ ] sentiment
+  - [ ] error
+  - [ ] waiting
 
-- touch-enabled display
-  - conversations
-  - logs
-  - sentiment
-  - settings
-  - menus
-
-
-### Tactile Button
-
-- start/stop conversation
-- quick input
-- settings control
+- [x] [NX3224T024: touch display](https://nextion.tech/datasheets/nx3224t024/)
+  - [ ] conversations
+  - [ ] logs
+  - [ ] sentiment
+  - [ ] settings
+  - [ ] menus
 
 
-### Flipper Gestures
+### Tactile
 
-- greeting
-- excitement
-- encouragement
-- support
+- [x] [Arcade Push Button (24mm)](https://www.aliexpress.com/item/1005003651570456.html?spm=a2g0o.productlist.main.21.5abc6d2dMls7ZG&algo_pvid=7bb0f609-660b-4586-bbe4-02c2492670c5&utparam-url=scene%3Asearch%7Cquery_from%3A)
+  - [ ] start/stop conversation
+  - [ ] quick input
+  - [ ] settings control
+
+
+### Gestures
+
+- [x] [SG90: Servo](http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf)
+  - [ ] greeting
+  - [ ] excitement
+  - [ ] encouragement
 
 ### Environment
 
-- [MR60BHA1: mmWave Radar](https://wiki.seeedstudio.com/Radar_MR60BHA1/) 
+- [ ] [MR60BHA1: mmWave Radar](https://wiki.seeedstudio.com/Radar_MR60BHA1/) 
   - user presence
   - heart rate
   - respiratory rate
-- [SCD4x: Photoacoustic NDIR CO2 sensor](https://sensirion.com/media/documents/48C4B7FB/64C134E7/Sensirion_SCD4x_Datasheet.pdf) 
+- [ ] [SCD4x: Photoacoustic NDIR CO2 sensor](https://sensirion.com/media/documents/48C4B7FB/64C134E7/Sensirion_SCD4x_Datasheet.pdf) 
   - air quality
   - temperature
   - humidity
-- [TMF882X](https://cdn.sparkfun.com/assets/learn_tutorials/2/2/8/9/TMF882X_DataSheet.pdf) multizone dToF proximity sensor
+- [ ] [TMF882X](https://cdn.sparkfun.com/assets/learn_tutorials/2/2/8/9/TMF882X_DataSheet.pdf) multizone dToF proximity sensor
   - surface albedo 
   - surface slope
   - surface distance 
   - ambient light
-- Mic: ambient noise level
+- [ ] Mic: ambient noise level
 
 
 ## Dev
 
+### Docs
+
+- Assembly
+- Configuration
+- Troubleshooting
+- FAQ
+
+### CodeStation
+
+#### Interaction Engine
+  - LLM inferencing
+  - sentiment inferencing
+  - affect recognition inferencing
+
+#### Device Manager
+  - motion control
+  - environment sensing
+  - audio control
+  - display manager
+  - service server
+  - web app hosting
+
+#### Test Suite
+  - mic
+  - speaker
+  - sensors
+  - motor test
+
+#### (Web) App
+  - profile management
+  - chat interface
+  - study planner
+  - course tracker
+  - progress monitor
+  - device management
+  - troubleshooting
+  - support 
 
 ### MechDesign
 
@@ -100,52 +139,48 @@ markmap:
 - wiring diagram
 - troubleshoot guide
 
-### CodeStation
 
-- Interaction Engine
-  - LLM inferencing
-  - sentiment inferencing
-  - affect recognition inferencing
-- Device Manager
-  - motion control
-  - environment sensing
-  - audio control
-  - display manager
-  - service server
-  - web app hosting
-- Test Suite
-  - Component Tests
-    - mic
-    - speaker
-    - sensors
-    - motor test
-    - 
+## Publishing
 
+### Publications
+- MDPI repl. pkgs
+- ICSR repl. pkgs
+- UniTartu MSc repl. pkgs
+- UniGuyana BSc repl. pkgs
 
-### (Web) App
-- profile management
-- chat interface
-- study planner
-- course tracker
-- progress monitor
-- device management
-- troubleshooting
-- support 
+### Media
+- Videos 
+  - raw, short clips
+  - rendered examples
+  - video documentation
+  - tutorial videos
+  - gif clips
+- Albums
+  - product photos
+  - profile photos
+- Posters
+- Blogs
+  - Short articles
+  - Reviews
 
+### Promoting
+- online sharing
+  - track reach
+  - plan posts
+  - posts catalog
+  - platforms
+    - LinkedIn
+    - YouTube
+    - OpenSauced
+    - GitHub Education
+- AdSense
+- RSC - Discussions
+- releases 
 
-## Docs
-
-- Assembly
-- Configuration
-- Troubleshooting
-- FAQ
-
-## Media
-
-- publications
-  - MDPI repl. pkgs
-  - ICSR repl. pkgs
-  - UniTartu MSc repl. pkgs
-  - UniGuyana BSc repl. pkgs
-- demo footage
-
+### Funding
+- Crowdfunding
+  - crowdsupply
+- Sponsorship
+  - Kofi
+  - Patreon
+- Donations
