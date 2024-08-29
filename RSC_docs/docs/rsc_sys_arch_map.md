@@ -5,9 +5,9 @@ markmap:
   initialExpandLevel: -1
 ---
 
-## Interaction
+## **Interaction**
 
-### Audio
+### *Audio*
 
 - [ ] [`PyAudio 0.2.14`](https://pypi.org/project/PyAudio/)
   - [x] (IN) Respeaker 2 Mics HAT
@@ -27,8 +27,9 @@ markmap:
     - [ ] (Remote) Anthropic API
     - [ ] (Remote) Google Gemini API
 
-  - Text-To-Speech
-    - [`pyttsx3 2.91`](https://pypi.org/project/pyttsx3/)  
+  - [x] Text-To-Speech
+    - [x] [`pyttsx3 2.91`](https://pypi.org/project/pyttsx3/)
+    - [ ] [OpenAI TTS](https://platform.openai.com/docs/guides/text-to-speech)  
 
 - [ ] RSC Status
   - [ ] loading 
@@ -36,7 +37,7 @@ markmap:
   - [ ] error
   - [ ] waiting
 
-### Visual
+### *Visual*
 
 - [x] [16x NeoPixel Ring](https://www.adafruit.com/product/1463): RSC Status
   - [ ] loading 
@@ -52,7 +53,7 @@ markmap:
   - [ ] menus
 
 
-### Tactile
+### *Tactile*
 
 - [x] [Arcade Push Button (24mm)](https://www.aliexpress.com/item/1005003651570456.html?spm=a2g0o.productlist.main.21.5abc6d2dMls7ZG&algo_pvid=7bb0f609-660b-4586-bbe4-02c2492670c5&utparam-url=scene%3Asearch%7Cquery_from%3A)
   - [ ] start/stop conversation
@@ -60,14 +61,14 @@ markmap:
   - [ ] settings control
 
 
-### Gestures
+### *Gestures*
 
 - [x] [SG90: Servo](http://www.ee.ic.ac.uk/pcheung/teaching/DE1_EE/stores/sg90_datasheet.pdf)
   - [ ] greeting
   - [ ] excitement
   - [ ] encouragement
 
-### Environment
+### *Environment*
 
 - [ ] [MR60BHA1: mmWave Radar](https://wiki.seeedstudio.com/Radar_MR60BHA1/) 
   - user presence
@@ -85,70 +86,72 @@ markmap:
 - [ ] Mic: ambient noise level
 
 
-## Dev
+## **Dev**
 
-### Docs
+### [*Docs*](https://github.com/RobotStudyCompanion/Documentation)
 
-- Assembly
-- Configuration
-- Troubleshooting
-- FAQ
+- [ ] Assembly
+- [ ] Configuration
+- [ ] Troubleshooting
+- [ ] FAQ
 
-### CodeStation
+### [*CodeStation*](https://github.com/RobotStudyCompanion/CodeStation)
 
-#### Interaction Engine
-  - LLM inferencing
-  - sentiment inferencing
-  - affect recognition inferencing
+#### *Interaction Engine*
+  -  [ ] LLM inferencing
+  -  [ ] sentiment inferencing
+  -  [ ] affect recognition inferencing
 
-#### Device Manager
-  - motion control
-  - environment sensing
-  - audio control
-  - display manager
-  - service server
-  - web app hosting
+#### *Device Manager*
+  -  [ ] motion control
+  -  [ ] environment sensing
+  -  [ ] audio control
+  -  [ ] display manager
+  -  [ ] service server
+  -  [ ] web app hosting
 
-#### Test Suite
-  - mic
-  - speaker
-  - sensors
-  - motor test
+#### *Test Suite*
+  - [x] mic
+  - [x] NeoPixel LED Ring
+  - [x] speaker
+  - [ ] Touch Display
+  - [ ] sensors
+  - [x] motor test
 
-#### (Web) App
-  - profile management
-  - chat interface
-  - study planner
-  - course tracker
-  - progress monitor
-  - device management
-  - troubleshooting
-  - support 
+### [*(Web) App*](https://github.com/RobotStudyCompanion/WebApp)
+  - [ ] profile management
+  - [ ] chat interface
+  - [ ] study planner
+  - [ ] course tracker
+  - [ ] progress monitor
+  - [ ] device management
+  - [ ] troubleshooting
+  - [ ] support 
 
-### MechDesign
+### [*MechDesign*](https://github.com/RobotStudyCompanion/MechDesign)
 
 - modular design
 - guide grooves
 - snap-fit construction
 - 3D printed enclosure
 
-### ElectroCircuits
+### [*ElectroCircuits*](https://github.com/RobotStudyCompanion/ElectroCircuits)
 
-- expansion board schematic
-- expansion board PCB
-- wiring diagram
-- troubleshoot guide
+- [x] expansion board schematic
+- [ ] expansion board PCB
+- [x] wiring diagram
+- [ ] troubleshoot guide
 
 
-## Publishing
+## **Publishing**
 
-### Publications
+### *Publications*
 - MDPI repl. pkgs
 - ICSR repl. pkgs
 - UniTartu MSc repl. pkgs
 - UniGuyana BSc repl. pkgs
 
-### Media
+### *Media*
 - Videos 
   - raw, short clips
   - rendered examples
@@ -163,9 +166,10 @@ markmap:
   - Short articles
   - Reviews
 
-### Promoting
+### *Promoting*
 - online sharing
   - track reach
+    - AdSense
   - plan posts
   - posts catalog
   - platforms
@@ -173,14 +177,13 @@ markmap:
     - YouTube
     - OpenSauced
     - GitHub Education
-- AdSense
 - RSC - Discussions
 - releases 
 
-### Funding
+### *Funding*
 - Crowdfunding
-  - crowdsupply
+  - [ ] crowdsupply
 - Sponsorship
-  - Kofi
-  - Patreon
+  - [ ] Kofi
+  - [ ] Patreon
 - Donations
