@@ -1,50 +1,89 @@
 ---
-title: Robot[ic]<br>Study<br>Companion
+title: <h1>Robot[ic]<br>Study<br>Companion</h1>
 markmap:
-  colorFreezeLevel: 4
+  colorFreezeLevel: 6
 ---
 
 ## Interaction
 
+### Audio: Speech
 
-### Audio
+- PyAudio 0.2.14
+  - (IN) Respeaker 2 Mics HAT
+  - (IN) AIY Voice Bonnet v2
+  - (IN) USB Mic
+  - (OUT) Built-In Speaker
+  - (OUT) BT Speaker
 
-#### Input: 2 Mic Array
-| Library | Version | 
-|-|-|
-| STT | v1 | 
-| SpeechRecognition | v0 | 
+- Speech
+  - Speech-To-Text
+    - `SpeechRecognition 3.10.4`
+    - `OpenAI/Whisper v20231117`
 
+  - LLM Inference
+    - (Local) Ollama
+    - (Remote) OpenAI API
+    - (Remote) Anthropic API
+    - (Remote) Google Gemini API
 
-#### Output: Speaker
+  - Text-To-Speech
+    - `pyttsx3 2.91`  
 
-| Library | Version | 
-|-|-|
-| TTS | v1 | 
-| Whisper | v0 | 
-
+- Audio Tone: RSC Status
+  - loading 
+  - sentiment
+  - error
+  - waiting
 
 ### Visual
 
-- RGB LED array
-- touch enabled display
+- Neopixel RGB LED Array: RSC Status
+  - loading 
+  - sentiment
+  - error
+  - waiting
 
-### Tactile
+- touch-enabled display
+  - conversations
+  - logs
+  - sentiment
+  - settings
+  - menus
 
-- button
-- touch enabled display
 
-### Gestures
+### Tactile Button
 
-- active flippers
+- start/stop conversation
+- quick input
+- settings control
+
+
+### Flipper Gestures
+
+- greeting
+- excitement
+- encouragement
+- support
 
 ### Environment
 
-- mmWave
+- [MR60BHA1: mmWave Radar](https://wiki.seeedstudio.com/Radar_MR60BHA1/) 
+  - user presence
+  - heart rate
+  - respiratory rate
+- [SCD4x: Photoacoustic NDIR CO2 sensor](https://sensirion.com/media/documents/48C4B7FB/64C134E7/Sensirion_SCD4x_Datasheet.pdf) 
+  - air quality
+  - temperature
+  - humidity
+- [TMF882X](https://cdn.sparkfun.com/assets/learn_tutorials/2/2/8/9/TMF882X_DataSheet.pdf) multizone dToF proximity sensor
+  - surface albedo 
+  - surface slope
+  - surface distance 
+  - ambient light
+- Mic: ambient noise level
 
 
-## RSC Dev
-
+## Dev
 
 
 ### MechDesign
@@ -56,13 +95,43 @@ markmap:
 
 ### ElectroCircuits
 
-- le PCB
-- 
+- expansion board schematic
+- expansion board PCB
+- wiring diagram
+- troubleshoot guide
 
 ### CodeStation
 
 - Interaction Engine
-- 
+  - LLM inferencing
+  - sentiment inferencing
+  - affect recognition inferencing
+- Device Manager
+  - motion control
+  - environment sensing
+  - audio control
+  - display manager
+  - service server
+  - web app hosting
+- Test Suite
+  - Component Tests
+    - mic
+    - speaker
+    - sensors
+    - motor test
+    - 
+
+
+### (Web) App
+- profile management
+- chat interface
+- study planner
+- course tracker
+- progress monitor
+- device management
+- troubleshooting
+- support 
+
 
 ## Docs
 
@@ -71,15 +140,12 @@ markmap:
 - Troubleshooting
 - FAQ
 
-## Events
+## Media
 
 - publications
-  - conference
-  - article
-  - essay
-  - review
-  - ...
-- replication packages
-- 
-
+  - MDPI repl. pkgs
+  - ICSR repl. pkgs
+  - UniTartu MSc repl. pkgs
+  - UniGuyana BSc repl. pkgs
+- demo footage
 
